@@ -1,0 +1,256 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/Unilever-3-gyon-intra-lighting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    transition: all .5s 30ms ;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 3px;
+    font-size: 19px;
+    color:rgb(231, 179, 48);
+    transition: all .5s 30ms ;
+}
+
+.logo{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacts .number{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(231, 179, 48);
+    margin-top: 5px;
+}
+
+.contacts .call{
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    opacity: .8;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main h1{
+    font-size: 65px;
+    text-align: center;
+    text-transform: uppercase ;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main button{
+    position: relative;
+    margin: 30px;
+    padding: 10px 35px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: all .3s 30ms ;
+
+}
+
+button::before{
+    content: "";
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    position:absolute ;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+button::after{
+    content: "";
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    position:absolute ;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+button:hover{
+    border: 2px solid white;
+    padding: 15px 35px;
+    font-size: medium;
+    font-weight: bold;
+    transition: all .3s 30ms ;
+}
+main i{
+    color: white;
+    font-size: 15px;
+}
+.left{
+    position: relative;
+    padding: 13px 21px;
+    top: 165px;
+    right: 500px;
+    align-self: center;
+}
+.left::before{
+    content: "";
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.2;
+    transition: all .7s 30ms;
+}
+.left::after{
+    content: "";
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 0px;
+    opacity: 0.2;
+    transition: all .7s 30ms;
+
+}
+.left:hover::after,
+.left:hover::before{
+    width: 120%;
+    height: 120%;
+    opacity: .7;
+    transition: all .7s 30ms;
+    cursor: pointer;
+
+}
+
+.right{
+    position: relative;
+    padding: 13px 21px;
+    bottom: 35px;
+    left: 500px;
+    align-self: center;
+}
+.right::before{
+    content: "";
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.2;
+    transition: all .7s 30ms;
+}
+.right::after{
+    content: "";
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 0px;
+    opacity: 0.2;
+    transition: all .7s 30ms;
+
+}
+.right:hover::after,
+.right:hover::before{
+    width: 120%;
+    height: 120%;;
+    opacity: .7;
+    transition: all .7s 30ms;
+    cursor: pointer;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+}
+
+hr{
+    width: 80px;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 7px;
+}
+
+.more{
+    text-transform: capitalize;
+    opacity: 0.8;
+    padding: 7px;
+    margin-left: 125px;
+}
+
+.social i{
+    margin-left: 40px;
+    font-size: medium;
+    padding: 7px;
+    transition: all .3s 30ms ;
+}
+
+.social i:hover{
+    font-size:30px;
+    color: rgb(231, 179, 48);
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all .3s 30ms ;
+}
